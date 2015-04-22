@@ -865,12 +865,43 @@ footer a:focus {
   width: 25%;
 }
 
-
-
-
-
 .question {
   color: $ots_blue;
+}
+
+.join_us{
+	text-align: center;
+}
+.join_us h2{
+	text-align: center;
+}
+.ots_roles{
+	margin: 4em 0;
+	text-align: center;
+	@include clear;
+}
+.ots_role_title{
+	font-size: 1.4em;
+}
+.action_button{
+	border-width: 6px;
+	border-color: $ots_blue;
+	border-radius: 4px;
+	border-style: solid;
+	padding: 0.5em  0em;
+	width: 70%;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: $ots_blue;
+	margin: 2em auto;
+	display: block;
+	background-color: transparent;
+	transition: all ease-in 0.3s;
+}
+.action_button:hover{
+	border-color: $ots_blue_h;
+	background-color: $ots_blue_h;
+	color: #ffffff;
 }
 
 

@@ -14,7 +14,7 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; content: n
 
 a img { border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /* variables */
 /* colors */
@@ -189,15 +189,15 @@ ul.switch_lang li.active a { background-color: #085987; color: #FFF; }
 .sponsor_list .right img { float: right; }
 
 /* List of OTS members, extends float list. Includes image and links. */
-.team_list > li { min-height: 8em; height: auto !important; height: 8em; text-align: center; }
-.team_list > li.member { min-height: 240px; height: auto !important; height: 240px; }
+.team_list > li { min-height: 8em; text-align: center; }
+.team_list > li.member { min-height: 240px; }
 .team_list > li.join div { display: inline-block; border: 5px solid #eee; border-radius: 100%; width: 190px; height: 190px; position: relative; }
 .team_list > li.join div form { position: absolute; top: 50%; margin-top: -13px; font-size: 90%; }
 .team_list > li.join div form input.subscribe_email { width: 180px; height: 22px; padding: 2px; margin-bottom: 3px; border: 1px solid gray; }
 .team_list > li:before { display: none !important; }
 .team_list img { width: 100%; max-width: 200px; height: auto; border-radius: 100%; }
 .team_list h3 { font-size: 1em; }
-.team_list p { font-size: .714em; min-height: 6em; height: auto !important; height: 6em; }
+.team_list p { font-size: .714em; min-height: 6em; }
 
 .blocky { border-left: 2px #085987 solid; overflow: display; min-height: 130px; margin-bottom: 1em; }
 .blocky .head { border-bottom: 2px #085987 solid; padding-left: 25px; margin-left: -10px; }
@@ -266,7 +266,7 @@ footer a:hover, footer a:active, footer a:focus { color: #FFF; }
 .testimonials_teaser { overflow: hidden; text-align: center; }
 .testimonials_teaser img { width: 100%; height: auto; position: relative; display: inline-block; margin: 0 auto .666em; }
 
-.testimonial { overflow: hidden; position: relative; width: 100%; min-height: 400px; height: auto !important; height: 400px; }
+.testimonial { overflow: hidden; position: relative; width: 100%; min-height: 400px; }
 .testimonial header { overflow: hidden; }
 
 .testimonial_about { font-style: italic; }
@@ -455,6 +455,9 @@ body.show-modal .modal-backdrop, body.show-modal .modal { display: block; }
   .col_right { width: 46%; float: right; margin: 0 0 1.5em 3.75%; }
   .two-third { width: 60%; margin-right: 6.4%; float: left; }
   .a-third { width: 30%; margin-right: 3.1%; float: left; }
+  .col_3 { width: 28%; float: left; margin: 0 4% 0 0; }
+  .col_3 + .col_3 { margin: 0 4% 0 4%; }
+  .col_3 + .col_3 + .col_3 { margin: 0 0 0 4%; }
   .float_list_4 > li { width: 21%; }
   .site_header { padding-top: 7em; }
   .site_header_landing .site_header { padding-top: 4.25em; padding-bottom: 2.5em; }

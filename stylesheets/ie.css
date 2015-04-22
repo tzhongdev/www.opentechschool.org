@@ -38,6 +38,12 @@ body { font-size: 87.5%; }
 
 .a-third { width: 30%; margin-right: 3.1%; float: left; }
 
+.col_3 { width: 28%; float: left; margin: 0 4% 0 0; }
+
+.col_3 + .col_3 { margin: 0 4% 0 4%; }
+
+.col_3 + .col_3 + .col_3 { margin: 0 0 0 4%; }
+
 .float_list_4 > li { width: 21%; }
 
 .site_header { padding-top: 7em; }
